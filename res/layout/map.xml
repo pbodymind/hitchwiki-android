@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_weight="1"
+  	android:layout_height="0dp">
+
+	<TextView
+		android:id="@+id/City01"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	/>
+	<TextView
+		android:id="@+id/Description01"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	/>    
+	<Button android:text="previous"
+	    android:id="@+id/Button02"
+	    android:layout_width="250px"
+	    android:textSize="18px"
+	    android:layout_height="55px">
+	</Button>
+</LinearLayout>
+
+<com.google.android.maps.MapView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/map_view"
+  android:layout_width="fill_parent" 
+  android:clickable="true" 
+  android:enabled="true" 
+  android:layout_weight="1"
+  android:layout_height="0dp"
+  android:apiKey="0P98ZFe6l0mFVTYdu7nOIN-I3k2tu-KZVDaa5lw" />
+
+</LinearLayout>
